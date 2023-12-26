@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
-require './lib/shared_reference'
-require './lib/dependency_graph_strategies'
+require_relative './shared_reference'
+require_relative './strategies/topsort_utils'
+require_relative './strategies/topsort_utils_with_connected_components'
 
 # The `DependencyGraph` class represents a directed graph, specifically designed to handle and
 # manage dependencies between multiple entities or nodes. It provides capabilities to add
